@@ -6,17 +6,17 @@
 /*   By: lprior <lprior@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 19:29:48 by lprior            #+#    #+#             */
-/*   Updated: 2017/10/05 12:52:54 by lprior           ###   ########.fr       */
+/*   Updated: 2018/02/09 18:53:03 by lprior           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	ft_putnbr(long long int n)
 {
-	if (n == -2147483648)
+	if (n == -9223372036854775807 - 1)
 	{
-		ft_putstr("-2147483648");
+		ft_putstr("-9223372036854775808");
 		return ;
 	}
 	if (n < 0)
